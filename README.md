@@ -4,11 +4,11 @@ In this project I will analyze the big data of Wafer manufaturing by using PySpa
 
 > [Introduction of wafer processing](#introduction) 
 
-> [Introduction of Spark and Hadoop](#introduction of spark and hadoop)
+> [Introduction of Spark and Hadoop](#introduction)
 
-> Introduction of Wafer Data 
+> [Introduction of Wafer Data](#introduction) 
 
-> Data analyze
+> [Data analyze](#data)
 
    - Pearson Correlation
   
@@ -16,9 +16,9 @@ In this project I will analyze the big data of Wafer manufaturing by using PySpa
   
    - PLSR
 
-> Result
+> [Result](#result)
 
-> Conclusion
+> [Conclusion](#conclusion)
 
 ## Introduction of wafer processing
 ## Introduction of Spark and Hadoop
