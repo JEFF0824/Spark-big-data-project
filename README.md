@@ -2,13 +2,13 @@
 In this project I will analyze the big data of Wafer manufaturing by using PySpark in several steps.
 # Guide line
 
-> [Wafer processing introduction](#wafer) 
+> [Wafer processing introduction](#wafer-processing-introduction) 
 
-> [Spark and Hadoop introduction](#spark)
+> [Spark and Hadoop introduction](#spark-and-hadoop-introductio)
 
-> [Wafer processing Data introduction](#wafer) 
+> [Wafer processing Data introduction](#wafer-processing-data-introduction) 
 
-> [Data analyze](#data)
+> [Data analyze](#data-analyze)
 
    - Pearson Correlation
   
