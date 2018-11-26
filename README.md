@@ -12,7 +12,7 @@ In this project I will analyze the big data of Wafer manufaturing by using PySpa
 
    - Pearson Correlation
   
-   - Box plot(median gap)
+   - Box plot(by median gap)
   
    - PLSR
 
