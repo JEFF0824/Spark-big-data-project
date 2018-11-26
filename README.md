@@ -23,7 +23,9 @@ Managing the yield of wafer is one of the most important tasks to the semiconduc
 Semiconductor manufacturing is one of the most complex works that has hundreds of process steps, several kinds of wafers, machinery, re-entrant flow, and innumerable process parameters, so it takes few months for completing the whole processes accordingly. Also, since semiconductor manufacturing process is very sensitive on stream, yield management is one of the most important issues directly connected to survival of a company.Here I briefly introduced the manufacturing process of wafer.
 
 - Wafer Manufaturing
-Wafer manufaturing: The profound process of fabricating silicon wafers with IC design by masks and semiconductors processing machine tools.
+Wafer manufaturing: 
+
+  The profound process of fabricating silicon wafers with IC design by masks and semiconductors processing machine tools.
 
    
 
