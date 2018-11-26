@@ -29,9 +29,13 @@ Semiconductor manufacturing is one of the most complex works that has hundreds o
     ![screen shot 2018-11-26 at 7 17 55 pm](https://user-images.githubusercontent.com/36265245/49011072-28738e80-f1b0-11e8-92b1-e4d77744a9ea.png)
     
 - Wafer Processing
-
-    The process is roughly divided into several stations, each of which corresponds to several stages.Each stage corresponds to a certain type of machine processing (there are several machines of various types in the factory). A type of machine will be used in many stages and all the wafer must be processed in sequence from start to finish.
-    
+  - Wafer fabrication
+  
+      The process is roughly divided into several stations, each of which corresponds to several stages. Each stage corresponds to a certain type of machine processing (there are several machines of various types in the factory). A type of machine will be used in many stages and all the wafer must be processed in sequence from start to finish.
+  - Wafer probe
+  
+      A wafer prober is a machine used to test integrated circuits. In this project, we will foucus on the parameter called WAT(Wafer Acceptance Test)
+ 
  ![screen shot 2018-11-26 at 7 30 15 pm](https://user-images.githubusercontent.com/36265245/49011603-d03d8c00-f1b1-11e8-917f-974b4f5daa9b.png)
 
 
