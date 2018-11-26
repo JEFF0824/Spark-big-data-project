@@ -1,2 +1,2 @@
 # Introduction
-In this project i will analyze the big data of Wafer manufaturing by using PySpark
+In this project i will analyze the big data of Wafer manufaturing by using PySpark in several steps.
