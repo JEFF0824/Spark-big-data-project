@@ -4,9 +4,9 @@ In this project I will analyze the big data of Wafer manufaturing by using PySpa
 
 > [Introduction of wafer processing](#introduction) 
 
-> Introduction of Spark and Hadoop
+> [Introduction of Spark and Hadoop](#introduction of spark and hadoop)
 
-> Introduction of Data in this project
+> Introduction of Wafer Data 
 
 > Data analyze
 
@@ -21,3 +21,8 @@ In this project I will analyze the big data of Wafer manufaturing by using PySpa
 > Conclusion
 
 ## Introduction of wafer processing
+## Introduction of Spark and Hadoop
+## Introduction of Wafer Data 
+## Data analyze
+## Result
+## Conclusion
