@@ -36,7 +36,7 @@ Semiconductor manufacturing is one of the most complex works that has hundreds o
   
       A wafer prober is a machine used to test integrated circuits. In this project, we will foucus on the parameter called WAT(Wafer Acceptance Test)
  
- ![screen shot 2018-11-26 at 7 30 15 pm](https://user-images.githubusercontent.com/36265245/49011603-d03d8c00-f1b1-11e8-917f-974b4f5daa9b.png)
+  ![screen shot 2018-11-26 at 7 30 15 pm](https://user-images.githubusercontent.com/36265245/49011603-d03d8c00-f1b1-11e8-917f-974b4f5daa9b.png)
 
 
 
