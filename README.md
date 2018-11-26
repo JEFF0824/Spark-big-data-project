@@ -4,7 +4,7 @@ In this project I will analyze the big data of Wafer manufaturing by using PySpa
 
 > [Wafer processing introduction](#wafer-processing-introduction) 
 
-> [Spark and Hadoop introduction](#spark-and-hadoop-introductio)
+> [Spark and Hadoop introduction](#spark-and-hadoop-introduction)
 
 > [Wafer processing Data introduction](#wafer-processing-data-introduction) 
 
