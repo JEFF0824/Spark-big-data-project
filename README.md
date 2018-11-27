@@ -116,9 +116,17 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 
 > In the directory wat_data/wat:
 
+  Just like we mentioned, WAT is a test key whick will affect yield.
+
 | <a>**wat.header**</a> | <a>**wat.first_raw**</a> 
 | :---: |:---:| 
 |![screen shot 2018-11-27 at 3 00 05 pm](https://user-images.githubusercontent.com/36265245/49065321-a68b7000-f258-11e8-8450-1a6dda26a69a.png)    | ![screen shot 2018-11-27 at 3 00 19 pm](https://user-images.githubusercontent.com/36265245/49065322-a7240680-f258-11e8-9f8d-019da7aabcda.png)
+
+> In the directory FDC_data/stageXX:
+
+| <a>**stageXX.header and stageXX.row**</a> | 
+| :---: |
+|![screen shot 2018-11-27 at 3 25 38 pm](https://user-images.githubusercontent.com/36265245/49066944-99bd4b00-f25d-11e8-877c-27e96531ee6d.png)   | 
 
 
 ## Data analyze
