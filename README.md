@@ -146,9 +146,18 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
   | <a>*Correlation matrix*</a> | 
   | :---: |
   |![screen shot 2018-11-27 at 8 22 41 pm](https://user-images.githubusercontent.com/36265245/49082458-c6388d80-f284-11e8-98ca-d90e0f33066a.png)| 
+  
   | <a>*Top ten WAT*</a> | 
   | :---: |
   |![screen shot 2018-11-27 at 8 22 54 pm](https://user-images.githubusercontent.com/36265245/49082632-3b0bc780-f285-11e8-981a-ca436a6159ac.png)| 
+  
+  | <a>*WAT1036*</a> | <a>*WAT2985*</a> | <a>*WAT2848*</a> | 
+  | :---: | :---: | :---: |
+  |![screen shot 2018-11-27 at 8 23 06 pm](https://user-images.githubusercontent.com/36265245/49082946-19f7a680-f286-11e8-88c5-982e8aaec820.png)| ![screen shot 2018-11-27 at 8 23 13 pm](https://user-images.githubusercontent.com/36265245/49082947-1a903d00-f286-11e8-9db2-8ae7f1c2ee46.png)|![screen shot 2018-11-27 at 8 23 20 pm](https://user-images.githubusercontent.com/36265245/49082948-1a903d00-f286-11e8-8ff7-6f6239fed1f4.png)|
+  | <a>*WAT748*</a> | <a>*WAT517*</a> | <a>*WAT1477*</a> | 
+  |![screen shot 2018-11-27 at 8 31 26 pm](https://user-images.githubusercontent.com/36265245/49083154-ca65aa80-f286-11e8-8e24-9af44542710c.png)| ![screen shot 2018-11-27 at 8 31 31 pm](https://user-images.githubusercontent.com/36265245/49083155-cafe4100-f286-11e8-8a90-ab87f1f82dee.png)|![screen shot 2018-11-27 at 8 31 37 pm](https://user-images.githubusercontent.com/36265245/49083156-cafe4100-f286-11e8-983b-20790faab088.png)|
+  | <a>*WAT33*</a> | <a>*WAT2064*</a> | <a>*WAT2086*</a> | 
+  |![screen shot 2018-11-27 at 8 31 46 pm](https://user-images.githubusercontent.com/36265245/49083246-0e58af80-f287-11e8-9722-7b78d6ff2a67.png)| ![screen shot 2018-11-27 at 8 31 52 pm](https://user-images.githubusercontent.com/36265245/49083247-0ef14600-f287-11e8-85c4-6c70533a873c.png)|![screen shot 2018-11-27 at 8 31 58 pm](https://user-images.githubusercontent.com/36265245/49083249-0ef14600-f287-11e8-9ee1-926807cc06d0.png)|
   
 ### Step 2 - Box plot(By median gap)
 
