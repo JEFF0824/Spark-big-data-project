@@ -207,5 +207,12 @@ After previous steps, we can concentrate on specific stageS and toolid for doing
 
 ## Conclusion
 
-
-
+### I propose an approach of yield managment which could probably handle complex semiconductor manufacturing process and detect where false will operate.
+### Why don't I use PCA but PLSR?
+  - It is impossible to restore compressed features to original features for accurate troubleshooting.
+### Why don't I use Random Forest?
+  We know that Random Forest also has the function of `importance Feature`, which tells us what features are used as root nodes (the most important one).
+  #### But!
+  - We must classify the data first, etc:(yield > 70 = 1, yield < 70 = 0), but the features chosen to be the root greatly depends on how we classify the data.
+  - There are many parameters in model training, such as num_tree, max_depth and so on. It will also greatly affect the outcome of feature selection.
+  #### The result is unstable and the process is time-consuming.
