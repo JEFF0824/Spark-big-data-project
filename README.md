@@ -9,8 +9,6 @@ Managing the yield of wafer is one of the most important tasks to the semiconduc
 
 > [Data analyze](#data-analyze)
 
-- Data preprocessing
-
 - Pearson Correlation
   
 - Box plot(by median gap)
@@ -136,20 +134,21 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 
 ## Data analyze
 
-### Step 1 - Data preprocessing
+### Step 1 - Pearson Correlation
 
-- **Drop uncessary columns**
-    - 🍴 Fork this repo!
-
-- **Merge all the dataframe**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
-
-### Step 2 - Pearson Correlation
+- **Data preprocessing**
+  - Merge all the dataframe
+  - Drop uncessary columns
+- **Pearson correlation**
+  - Compute the pearson matrix and print the top ten
+- **Draw correlation plot**
+  - plot the specific WAT columns repect to yield
+  
+### Step 2 - Box plot(By median gap)
 
 - **HACK AWAY!** 🔨🔨🔨
 
-### Step 3 - Box plot
-### Step 4 - PLSR
+### Step 3 - PLSR
 
 ## Result
 ## Conclusion
