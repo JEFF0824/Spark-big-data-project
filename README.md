@@ -142,9 +142,14 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 - **Draw correlation plot**
   - plot the specific WAT columns repect to yield
 - **Result**
-  | <a>**Correlation matrix*</a> | 
+
+  | <a>*Correlation matrix*</a> | 
   | :---: |
-  |![screen shot 2018-11-27 at 8 22 41 pm](https://user-images.githubusercontent.com/36265245/49082458-c6388d80-f284-11e8-98ca-d90e0f33066a.png)   | 
+  |![screen shot 2018-11-27 at 8 22 41 pm](https://user-images.githubusercontent.com/36265245/49082458-c6388d80-f284-11e8-98ca-d90e0f33066a.png)| 
+  | <a>*Top ten WAT*</a> | 
+  | :---: |
+  |![screen shot 2018-11-27 at 8 22 54 pm](https://user-images.githubusercontent.com/36265245/49082632-3b0bc780-f285-11e8-981a-ca436a6159ac.png)| 
+  
 ### Step 2 - Box plot(By median gap)
 
 - **HACK AWAY!** 🔨🔨🔨
