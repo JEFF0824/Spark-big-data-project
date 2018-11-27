@@ -15,8 +15,6 @@ Managing the yield of wafer is one of the most important tasks to the semiconduc
   
 - PLSR
 
-> [Result](#result)
-
 > [Conclusion](#conclusion)
 
 ## Wafer processing introduction
@@ -143,6 +141,7 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
   - Compute the pearson matrix and print the top ten
 - **Draw correlation plot**
   - plot the specific WAT columns repect to yield
+- **Result**
   
 ### Step 2 - Box plot(By median gap)
 
@@ -150,5 +149,4 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 
 ### Step 3 - PLSR
 
-## Result
 ## Conclusion
