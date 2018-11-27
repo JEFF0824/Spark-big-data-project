@@ -160,8 +160,31 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
   |![screen shot 2018-11-27 at 8 31 46 pm](https://user-images.githubusercontent.com/36265245/49083246-0e58af80-f287-11e8-9722-7b78d6ff2a67.png)| ![screen shot 2018-11-27 at 8 31 52 pm](https://user-images.githubusercontent.com/36265245/49083247-0ef14600-f287-11e8-85c4-6c70533a873c.png)|![screen shot 2018-11-27 at 8 31 58 pm](https://user-images.githubusercontent.com/36265245/49083249-0ef14600-f287-11e8-9ee1-926807cc06d0.png)|
   
 ### Step 2 - Box plot(By median gap)
+<a href="https://github.com/JEFF0824/Spark-project/blob/master/Box_plot(by%20median%20gap).py" target="_blank">Here</a> is the code!!
+- **Data preprocessing**
+  - Data type transform
+  - Merge all the dataframe
+  - Drop uncessary columns and renamed the columns
+- **Compute median**
+  - Compute the median in each Process stage first
+  - Then compute the median in each toolid
+  - Compute the median gap
+  - `from pyspark.sql.window import Window` and `import pyspark.sql.functions as func` are two useful tools in `Pyspark`
+- **Draw box plot**
+  - We can observe(or by coding) the most worst toolid in eacg step and we will list the top five toolid in specifi process stages that influnce the yield most.
+- **Result**
 
-- **HACK AWAY!** 🔨🔨🔨
+  | <a>*Top five toolid*</a> | 
+  | :---: |
+  |![screen shot 2018-11-27 at 9 21 22 pm](https://user-images.githubusercontent.com/36265245/49084521-ad32db00-f28a-11e8-96e2-97432c10e74a.png)| 
+  
+  | <a>*Stage209*</a> | <a>*Stage102*</a> | 
+  | :---: | :---: |
+  |![screen shot 2018-11-27 at 9 28 44 pm](https://user-images.githubusercontent.com/36265245/49085024-018a8a80-f28c-11e8-8610-9690d3480d12.png)| ![screen shot 2018-11-27 at 9 29 00 pm](https://user-images.githubusercontent.com/36265245/49085026-02232100-f28c-11e8-8abc-2fbac52dbfc9.png)|
+  | <a>*Stage200*</a> | <a>*Stage207*</a> | 
+  |![screen shot 2018-11-27 at 9 29 18 pm](https://user-images.githubusercontent.com/36265245/49085027-02232100-f28c-11e8-8196-bceea7d81fbb.png)| ![screen shot 2018-11-27 at 9 29 29 pm](https://user-images.githubusercontent.com/36265245/49085028-02bbb780-f28c-11e8-9936-ce0a7c86edb9.png)|
+  | <a>*Stage95*</a> | 
+  |![screen shot 2018-11-27 at 9 29 38 pm](https://user-images.githubusercontent.com/36265245/49085029-02bbb780-f28c-11e8-9cde-bd4645674490.png)| 
 
 ### Step 3 - PLSR
 
