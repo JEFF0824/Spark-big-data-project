@@ -191,7 +191,7 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 After previous steps, we can concentrate on specific stageS and toolid for doing further analysis; fortunately, we will figure out which WAT affects the yield precisely.
 - **Data preprocessing**
   - Data type transform
-  - Merge all the dataframe(Stage2_SVIDX_StepX~Stage300_SVIDX_StepX,waferid,yield)
+  - Merge all the dataframe(Stage2_SVIDX_StepX~Stage300_SVIDX_StepX, waferid, yield)
   - Drop uncessary columns and the same headers
   - Drop the missing value `NaN`
 - **Using PLSR**
