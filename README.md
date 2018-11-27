@@ -116,13 +116,15 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 
 > In the directory wat_data/wat:
 
-  Just like we mentioned, WAT is a test key whick will affect yield.
+   Just like we mentioned, WAT is a test key whick will affect yield.
 
 | <a>**wat.header**</a> | <a>**wat.first_raw**</a> 
 | :---: |:---:| 
 |![screen shot 2018-11-27 at 3 00 05 pm](https://user-images.githubusercontent.com/36265245/49065321-a68b7000-f258-11e8-8450-1a6dda26a69a.png)    | ![screen shot 2018-11-27 at 3 00 19 pm](https://user-images.githubusercontent.com/36265245/49065322-a7240680-f258-11e8-9f8d-019da7aabcda.png)
 
 > In the directory FDC_data/stageXX:
+
+   SVID(Status Variables Identification) is the physical data collected by sensors embedded in the advanced machines during the manufacturing process. To state the physical nature of certain SVID, we usually transform SVID into Fault Detection and Classification parameters (FDC parameters) using statistical indicators.
 
 | <a>**stageXX.header and stageXX.row**</a> | 
 | :---: |
