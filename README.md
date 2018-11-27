@@ -187,29 +187,25 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
   |![screen shot 2018-11-27 at 9 29 38 pm](https://user-images.githubusercontent.com/36265245/49085029-02bbb780-f28c-11e8-9cde-bd4645674490.png)| 
 
 ### Step 3 - PLSR
-<a href="https://github.com/JEFF0824/Spark-project/blob/master/Box_plot(by%20median%20gap).py" target="_blank">Here</a> is the code!!
+<a href="https://github.com/JEFF0824/Spark-project/blob/master/PLSR.py" target="_blank">Here</a> is the code!!
+After previous steps, we can concentrate on specific stageS and toolid for doing further analysis; fortunately, we will figure out which WAT affects the yield precisely.
 - **Data preprocessing**
   - Data type transform
-  - Merge all the dataframe
-  - Drop uncessary columns and renamed the columns
-- **Compute median**
-  - Compute the median in each Process stage first
-  - Then compute the median in each toolid
-  - Compute the median gap
-  - `from pyspark.sql.window import Window` and `import pyspark.sql.functions as func` are two useful tools in `Pyspark`
-- **Draw box plot**
-  - We can observe(or by coding) the most worst toolid in each step and we will list the top five toolid in specific process stages that influnce the yield most.
+  - Merge all the dataframe(Stage2_SVIDX_StepX~Stage300_SVIDX_StepX,waferid,yield)
+  - Drop uncessary columns and the same headers
+  - Drop the missing value `NaN`
+- **Using PLSR**
+  - PLSR is a Linear Regression Model with Multiple Input X and Multiple Output Y
+  - We make the input X and output Y do the principal component analysis(PCA) first and then do the coefficient estimation of linear regression model
+  - Show the VIP score in each SVID step
 - **Result**
 
-  | <a>*Top five toolid*</a> | 
+  | <a>*Top 20 VIP score of SVID steps*</a> | 
   | :---: |
-  |![screen shot 2018-11-27 at 9 21 22 pm](https://user-images.githubusercontent.com/36265245/49084521-ad32db00-f28a-11e8-96e2-97432c10e74a.png)| 
+  |![screen shot 2018-11-27 at 10 14 29 pm](https://user-images.githubusercontent.com/36265245/49087413-dc007f80-f291-11e8-9d56-72229df71db8.png)| 
   
-  | <a>*Stage209*</a> | <a>*Stage102*</a> | 
-  | :---: | :---: |
-  |![screen shot 2018-11-27 at 9 28 44 pm](https://user-images.githubusercontent.com/36265245/49085024-018a8a80-f28c-11e8-8610-9690d3480d12.png)| ![screen shot 2018-11-27 at 9 29 00 pm](https://user-images.githubusercontent.com/36265245/49085026-02232100-f28c-11e8-8abc-2fbac52dbfc9.png)|
-  | <a>*Stage200*</a> | <a>*Stage207*</a> | 
-  |![screen shot 2018-11-27 at 9 29 18 pm](https://user-images.githubusercontent.com/36265245/49085027-02232100-f28c-11e8-8196-bceea7d81fbb.png)| ![screen shot 2018-11-27 at 9 29 29 pm](https://user-images.githubusercontent.com/36265245/49085028-02bbb780-f28c-11e8-9936-ce0a7c86edb9.png)|
-  | <a>*Stage95*</a> | 
-  |![screen shot 2018-11-27 at 9 29 38 pm](https://user-images.githubusercontent.com/36265245/49085029-02bbb780-f28c-11e8-9cde-bd4645674490.png)| 
+
 ## Conclusion
+
+
+
