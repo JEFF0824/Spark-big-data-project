@@ -188,7 +188,7 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 
 ### Step 3 - PLSR
 <a href="https://github.com/JEFF0824/Spark-project/blob/master/PLSR.py" target="_blank">Here</a> is the code!!
-After previous steps, we can concentrate on specific stageS and toolid for doing further analysis; fortunately, we will figure out which WAT affects the yield precisely.
+After previous steps, we can concentrate on specific stages and toolid for doing further analysis; fortunately, we will precisely figure out which SVID steps affect the yield.
 - **Data preprocessing**
   - Data type transform
   - Merge all the dataframe(Stage2_SVIDX_StepX~Stage300_SVIDX_StepX, waferid, yield)
@@ -196,7 +196,7 @@ After previous steps, we can concentrate on specific stageS and toolid for doing
   - Drop the missing value `NaN`
 - **Using PLSR**
   - PLSR is a Linear Regression Model with Multiple Input X and Multiple Output Y
-  - We make the input X and output Y do the principal component analysis(PCA) first and then do the coefficient estimation of linear regression model
+  - We make the input X and output Y do the principal component analysis(PCA) through axis rotation first and then do the coefficient estimation of linear regression model
   - Show the VIP score in each SVID step
 - **Result**
 
