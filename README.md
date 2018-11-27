@@ -130,7 +130,7 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 | :---: |
 |![screen shot 2018-11-27 at 3 25 38 pm](https://user-images.githubusercontent.com/36265245/49066944-99bd4b00-f25d-11e8-877c-27e96531ee6d.png)   | 
 
-  From [this picture](#wafer-processing-introduction#-wafer-processing) we will know what those columns(toolid, chamberid, process, stage) represent.
+  From <a href="https://user-images.githubusercontent.com/36265245/49011603-d03d8c00-f1b1-11e8-917f-974b4f5daa9b.png" target="_blank">this picture</a> we will know what those columns(toolid, chamberid, process, stage) represent.
 
 
 ## Data analyze
