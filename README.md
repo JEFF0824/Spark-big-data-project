@@ -100,6 +100,20 @@ Semiconductor manufacturing is one of the most complex works that has hundreds o
   exec(open(os.path.join(spark_home, 'python/pyspark/shell.py')).read())
   ```
 ## Wafer processing Data introduction 
+Let's recall our misson again: 
+ 
+Find out the relevant factors which affect yield; therefore, we can delete some irrelevant data manually at first.
+
+> In the directory wat_data:
+
+| <a>**wat_data/Parameter_set**</a> | <a>**wat_data/Wat_root_cause**</a> 
+| :---: |:---:| 
+|![screen shot 2018-11-27 at 2 41 15 pm](https://user-images.githubusercontent.com/36265245/49063500-8f498400-f252-11e8-9201-8a957bea8896.png)    | ![screen shot 2018-11-27 at 2 41 26 pm](https://user-images.githubusercontent.com/36265245/49063501-907ab100-f252-11e8-9e6a-c0e591eaa604.png)
+
+  The aa column in Parameter_set are arbitrary numbers and so does the Range column. The other column in wat_root_cause isn't really meaningful to the process as well. 
+
+
+
 ## Data analyze
 ## Result
 ## Conclusion
