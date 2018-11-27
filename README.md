@@ -112,6 +112,13 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 
   The aa column in Parameter_set are arbitrary numbers and so does the Range column. The other column in wat_root_cause isn't really meaningful to the process as well. 
 
+### Here we move to the two of most important data
+
+> In the directory wat_data/wat:
+
+| <a>**wat.header**</a> | <a>**wat.first_raw**</a> 
+| :---: |:---:| 
+|![screen shot 2018-11-27 at 3 00 05 pm](https://user-images.githubusercontent.com/36265245/49065321-a68b7000-f258-11e8-8450-1a6dda26a69a.png)    | ![screen shot 2018-11-27 at 3 00 19 pm](https://user-images.githubusercontent.com/36265245/49065322-a7240680-f258-11e8-9f8d-019da7aabcda.png)
 
 
 ## Data analyze
