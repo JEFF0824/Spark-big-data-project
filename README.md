@@ -38,11 +38,67 @@ Semiconductor manufacturing is one of the most complex works that has hundreds o
  
   ![screen shot 2018-11-26 at 7 30 15 pm](https://user-images.githubusercontent.com/36265245/49011603-d03d8c00-f1b1-11e8-917f-974b4f5daa9b.png)
 
-
-
-   
-
 ## Spark and Hadoop introduction
+- What is Spark and Hadoop?
+
+  Hadoop is a extremely powerful tool for distributed, scalable and economical data storage, processing and analysis. The data of semiconductor manufaturing is really tremendous thus I choose Hadoop to store them and use Pyspark to analyze.
+  
+  ![screen shot 2018-11-27 at 1 36 43 pm](https://user-images.githubusercontent.com/36265245/49060681-8607e980-f249-11e8-9d95-c20c73de7c78.png)![screen shot 2018-11-27 at 1 38 55 pm](https://user-images.githubusercontent.com/36265245/49060756-d41ced00-f249-11e8-8a58-7e3a947ec583.png)
+
+- Simple command
+
+  > Copy file data.csv from local disk to the user’s directory in HDFS
+
+  ```shell
+  $ hdfs dfs –put data.csv data.csv
+  ```
+  > Get a directory listing of the user’s home directory in HDFS
+
+  ```shell
+  $ hdfs dfs ls
+  ```
+  > Display the contents of the HDFS file /user/semiconductor/data.csv
+
+  ```shell
+  $ hdfs dfs –cat /user/semiconductor/data.csv
+  ```
+- Set up Pyspark environment
+
+  ```python
+
+  #!/usr/bin/env python
+  # coding: utf-8
+
+  # In[ ]:
+
+
+  import os
+  import sys
+
+  #this part is used for pyspark submit
+  os.environ['PYSPARK_SUBMIT_ARGS']='--verbose --master=yarn --queue test pyspark-shell'
+
+  os.environ['JAVA_HOME']='/usr/lib/jvm/java-8-openjdk-amd64/'
+  os.environ['YARN_CONF_DIR']='/etc/alternatives/hadoop-conf/'
+
+  #this line is used for spark1.6
+  #os.environ['SPARK_HOME']='/opt/cloudera/parcels/CDH/lib/spark'
+
+  #this line is used for spark2.2
+  os.environ['SPARK_HOME']='/opt/cloudera/parcels/SPARK2-2.2.0.cloudera2-1.cdh5.12.0.p0.232957/lib/spark2'
+
+  # this line is used for python2.7
+  #os.environ['PYSPARK_PYTHON']='/usr/bin/python'
+
+  #this line is used for python3.5
+  os.environ['PYSPARK_PYTHON']='/usr/bin/python3'
+
+  spark_home = os.environ.get('SPARK_HOME', None)
+  sys.path.insert(0, os.path.join(spark_home, 'python'))
+  sys.path.insert(0, os.path.join(spark_home, 'python/lib/py4j-0.10.4-src.zip'))  
+  #execfile(os.path.join(spark_home, 'python/pyspark/shell.py'))
+  exec(open(os.path.join(spark_home, 'python/pyspark/shell.py')).read())
+  ```
 ## Wafer processing Data introduction 
 ## Data analyze
 ## Result
