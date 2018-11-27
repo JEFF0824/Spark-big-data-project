@@ -9,6 +9,8 @@ Managing the yield of wafer is one of the most important tasks to the semiconduc
 
 > [Data analyze](#data-analyze)
 
+- Data preprocessing
+
 - Pearson Correlation
   
 - Box plot(by median gap)
@@ -132,7 +134,22 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 
   From <a href="https://user-images.githubusercontent.com/36265245/49011603-d03d8c00-f1b1-11e8-917f-974b4f5daa9b.png" target="_blank">this picture</a> we will know what those columns(toolid, chamberid, process, stage) represent.
 
-
 ## Data analyze
+
+### Step 1 - Data preprocessing
+
+- **Drop uncessary columns**
+    - 🍴 Fork this repo!
+
+- **Merge all the dataframe**
+    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
+
+### Step 2 - Pearson Correlation
+
+- **HACK AWAY!** 🔨🔨🔨
+
+### Step 3 - Box plot
+### Step 4 - PLSR
+
 ## Result
 ## Conclusion
