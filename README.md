@@ -171,7 +171,7 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
   - Compute the median gap
   - `from pyspark.sql.window import Window` and `import pyspark.sql.functions as func` are two useful tools in `Pyspark`
 - **Draw box plot**
-  - We can observe(or by coding) the most worst toolid in eacg step and we will list the top five toolid in specifi process stages that influnce the yield most.
+  - We can observe(or by coding) the most worst toolid in each step and we will list the top five toolid in specific process stages that influnce the yield most.
 - **Result**
 
   | <a>*Top five toolid*</a> | 
