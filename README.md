@@ -17,7 +17,7 @@ Managing the yield of wafer is one of the most important tasks to the semiconduc
 
 > [Conclusion](#conclusion)
 
-## Wafer processing introduction
+# Wafer processing introduction
 Semiconductor manufacturing is one of the most complex works that has hundreds of process steps, several kinds of wafers, machinery, re-entrant flow, and innumerable process parameters, so it takes few months for completing the whole processes accordingly. Also, since semiconductor manufacturing process is very sensitive on stream, yield management is one of the most important issues directly connected to survival of a company.Here I briefly introduced the manufacturing process of wafer.
 
 - Wafer Manufaturing
@@ -36,7 +36,7 @@ Semiconductor manufacturing is one of the most complex works that has hundreds o
  
   ![screen shot 2018-11-26 at 7 30 15 pm](https://user-images.githubusercontent.com/36265245/49011603-d03d8c00-f1b1-11e8-917f-974b4f5daa9b.png)
 
-## Spark and Hadoop introduction
+# Spark and Hadoop introduction
 - What is Spark and Hadoop?
 
   Hadoop is a extremely powerful tool for distributed, scalable and economical data storage, processing and analysis. The data of semiconductor manufaturing is really tremendous thus I choose Hadoop to store them and use Pyspark to analyze.
@@ -97,7 +97,7 @@ Semiconductor manufacturing is one of the most complex works that has hundreds o
   #execfile(os.path.join(spark_home, 'python/pyspark/shell.py'))
   exec(open(os.path.join(spark_home, 'python/pyspark/shell.py')).read())
   ```
-## Wafer processing Data introduction 
+# Wafer processing Data introduction 
 Let's recall our misson again: 
  
 Find out the relevant factors which affect yield; therefore, we can delete some irrelevant data manually at first.
@@ -110,7 +110,7 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 
   The aa column in Parameter_set are arbitrary numbers and so does the Range column. The other column in wat_root_cause isn't really meaningful to the process as well. 
 
-### Here we move to the two of most important data
+## Here we move to the two of most important data
 
 > In the directory wat_data/wat:
 
@@ -130,9 +130,9 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
 
   From <a href="https://user-images.githubusercontent.com/36265245/49011603-d03d8c00-f1b1-11e8-917f-974b4f5daa9b.png" target="_blank">this picture</a> we will know what those columns(toolid, chamberid, process, stage) represent.
 
-## Data analyze
+# Data analyze
 
-### Step 1 - Pearson Correlation
+## Step 1 - Pearson Correlation
 <a href="https://github.com/JEFF0824/Spark-project/blob/master/wat_correlation.py" target="_blank">Here</a> is the code!!
 - **Data preprocessing**
   - Merge all the dataframe
@@ -159,7 +159,7 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
   | <a>*WAT33*</a> | <a>*WAT2064*</a> | <a>*WAT2086*</a> | 
   |![screen shot 2018-11-27 at 8 31 46 pm](https://user-images.githubusercontent.com/36265245/49083246-0e58af80-f287-11e8-9722-7b78d6ff2a67.png)| ![screen shot 2018-11-27 at 8 31 52 pm](https://user-images.githubusercontent.com/36265245/49083247-0ef14600-f287-11e8-85c4-6c70533a873c.png)|![screen shot 2018-11-27 at 8 31 58 pm](https://user-images.githubusercontent.com/36265245/49083249-0ef14600-f287-11e8-9ee1-926807cc06d0.png)|
   
-### Step 2 - Box plot(By median gap)
+## Step 2 - Box plot(By median gap)
 <a href="https://github.com/JEFF0824/Spark-project/blob/master/Box_plot(by%20median%20gap).py" target="_blank">Here</a> is the code!!
 - **Data preprocessing**
   - Data type transform
@@ -186,7 +186,7 @@ Find out the relevant factors which affect yield; therefore, we can delete some 
   | <a>*Stage95*</a> | 
   |![screen shot 2018-11-27 at 9 29 38 pm](https://user-images.githubusercontent.com/36265245/49085029-02bbb780-f28c-11e8-9cde-bd4645674490.png)| 
 
-### Step 3 - PLSR
+## Step 3 - PLSR
 <a href="https://github.com/JEFF0824/Spark-project/blob/master/PLSR.py" target="_blank">Here</a> is the code!!
 After previous steps, we can concentrate on specific stages and toolid for doing further analysis; fortunately, we will precisely figure out which SVID steps affect the yield.
 - **Data preprocessing**
@@ -205,14 +205,14 @@ After previous steps, we can concentrate on specific stages and toolid for doing
   |![screen shot 2018-11-27 at 10 14 29 pm](https://user-images.githubusercontent.com/36265245/49087413-dc007f80-f291-11e8-9d56-72229df71db8.png)| 
   
 
-## Conclusion
+# Conclusion
 
-### I propose an approach of yield managment which could probably handle complex semiconductor manufacturing process and detect where false will operate.
-### Why don't I use PCA but PLSR?
+## I propose an approach of yield managment which could probably handle complex semiconductor manufacturing process and detect where false will operate.
+## Why don't I use PCA but PLSR?
   - It is impossible to restore compressed features to original features for accurate troubleshooting.
-### Why don't I use Random Forest?
+## Why don't I use Random Forest?
   We know that Random Forest also has the function of `importance Feature`, which tells us what features are used as root nodes (the most important one).
-  #### But!
+  ### But!
   - We must classify the data first, etc:(yield > 70 = 1, yield < 70 = 0), but the features chosen to be the root greatly depends on how we classify the data.
   - There are many parameters in model training, such as num_tree, max_depth and so on. It will also greatly affect the outcome of feature selection.
-  #### The result is unstable and the process is time-consuming.
+  ### The result is unstable and the process is time-consuming.
