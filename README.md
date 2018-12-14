@@ -1,5 +1,5 @@
 # Abstract
-Managing the yield of wafer is one of the most important tasks to the semiconductor manufacturers. A lot of efforts for enhancing the yield of wafer have been conducted in both industries and academia. Thanks to the advance of IoT and data analytics techniques, huge amount of process operational data, such as indices of process parameters, equipment condition data, or historical data of manufacturing process, is collected and analyzed in realtime. In this project I will analyze the big data of Wafer manufaturing for troubleshooting and fault detection by using PySpark in several steps.
+Managing the yield of wafer is one of the most important tasks to the semiconductor manufacturers. A lot of efforts for enhancing the yield of wafer have been conducted in both industries and academia. Thanks to the advance of IoT and data analytics techniques, huge amount of process operational data, such as indices of process parameters, equipment condition data, or historical data of manufacturing process, is collected and analyzed in realtime. In this project I will analyze the big data of Wafer manufacturing for troubleshooting and fault detection by using PySpark in several steps.
 # Guide line
 > [Wafer processing introduction](#wafer-processing-introduction) 
 
